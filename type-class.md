@@ -34,7 +34,7 @@
     ```    
     object Show {
         def apply...
-	def show[A: Show](a: A) = Show[A].show(a)
-	implicit val ...
+        def show[A: Show](a: A) = Show[A].show(a)
+        implicit val ...
     }
     ```
