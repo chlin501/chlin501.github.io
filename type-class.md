@@ -43,6 +43,8 @@
 
 ## Code
 
+* Sample
+
     ```
     trait Show[T] {
         def show(msg: T): String
