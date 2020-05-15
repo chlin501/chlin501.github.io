@@ -1,6 +1,8 @@
 
 # Type Class
 
+## Steps
+
 1. Trait 
 
     ```
@@ -36,5 +38,26 @@
         def apply...
         def show[A: Show](a: A) = Show[A].show(a)
         implicit val ...
+    }
+    ```
+
+## Code
+
+    ```
+    trait Show[T] {
+        def show(msg: T): String
+    }
+    object Show {
+        def apply[T](implicit s: Show[T]) = s
+        def show[A: Show](msg: A) = Show[A].show(msg)
+        implicit val intShow = new Show[Int] {
+            override def show(msg: Int) = s"msg: $msg"
+        }
+    }
+    object App {
+        def main(args: Array[String]): Unit = {
+            import Show._
+            println(show(3))
+        }
     }
     ```
