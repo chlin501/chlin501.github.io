@@ -5,7 +5,7 @@
 
 1. Trait 
 
-    ```
+    ```scala
     trait Show[T] {
         def show(msg: T): String
     }
@@ -13,7 +13,7 @@
 
 2. Instance
 
-    ```
+    ```scala
     object Show {
         implicit val intShow = new Show[Int] {
             ovrerride def show(value: Int): String = s"int: $value"
@@ -23,7 +23,7 @@
 
 3. Creation
 
-    ```
+    ```scala
     object Show {
         def apply[T](implicit sh: Show[T]): Show[T] = sh
 
@@ -33,7 +33,7 @@
 
 4. Business Function
 
-    ```    
+    ```scala
     object Show {
         def apply...
         def show[A: Show](a: A) = Show[A].show(a)
@@ -45,7 +45,7 @@
 
 * Sample
 
-    ```
+    ```scala
     trait Show[T] {
         def show(msg: T): String
     }
