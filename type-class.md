@@ -1,6 +1,8 @@
 
 # Type Class
 
+In addition to the explanation desribed on the internet[1]. Scala type class makes use of type parameter denoting what kind of type this class uses. For instance, a config type class may load from typesafe or hadoop configuration; therefore, a type class `Setting[typesafe.Config]` or `Setting[hadoop.Configuration]` can be used to explicitly point out what kind of type underpins this setting. Thus the type parameter in `MyTrait[T]` usually is a single type, instead of complicated expression such as `MyTrait[I => O], `MyTrait[A, B, C]`, and so on.
+
 ## Steps
 
 1. Trait 
@@ -63,3 +65,7 @@
         }
     }
     ```
+
+# References
+
+  [1]. [Type class](https://en.wikipedia.org/wiki/Type_class) 
