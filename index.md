@@ -11,3 +11,7 @@ This place purely serves some personal note taking information.
     * [Managed](zio-managed.md)
 
     * [Miscellaneous](zio-miscellaneous.md)
+
+3. Git
+
+    * [Multiple Email Addresses](multiple-email-addresses.md)
