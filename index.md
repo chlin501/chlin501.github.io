@@ -15,3 +15,5 @@ This place purely serves some personal note taking information.
 3. Git
 
     * [Multiple Email Addresses](multiple-email-addresses.md)
+
+5. [Bookmarks](bookmarks.md)
