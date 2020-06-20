@@ -2,9 +2,15 @@
 
 This place purely serves some personal note taking information.
 
-1. [Type Class](type-class.md)
+1. Scala
 
-2. ZIO 
+    * [Context Bound](context-bounds.md)
+
+2. Functional Programming 
+
+    * [Type Class](type-class.md)
+
+3. ZIO 
 
     * [Task Status](zio-task-status.md)
 
@@ -12,8 +18,8 @@ This place purely serves some personal note taking information.
 
     * [Miscellaneous](zio-miscellaneous.md)
 
-3. Git
+4. Git
 
     * [Multiple Email Addresses](multiple-email-addresses.md)
 
-5. [Bookmarks](bookmarks.md)
+6. [Bookmarks](bookmarks.md)
