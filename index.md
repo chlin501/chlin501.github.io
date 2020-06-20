@@ -4,7 +4,7 @@ This place purely serves some personal note taking information.
 
 1. Scala
 
-    * [Context Bound](context-bounds.md)
+    * [Context Bounds](context-bounds.md)
 
 2. Functional Programming 
 
