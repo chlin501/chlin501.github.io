@@ -1,32 +1,32 @@
 # What is it?
 
-A minimum finding algorithm. It's compries two parts:
+  A minimum finding algorithm. It's compries two parts:
 
-    1. Preprocessing phase
+  1. Preprocessing phase
 
-    2. A sequence of iterations
+  2. A sequence of iterations
 
 # Preprocessing Phase (Setup)
 
-    1. Every entity exchanges its Id with its neighbors. 
+  1. Every entity exchanges its Id with its neighbors. 
 
-    2. The entity will orient the link toward the largest id. 
+  2. The entity will orient the link toward the largest id. 
 
-        * The entity x has id 5, with its neighbor y having id 7. The link is 5 -> 7.
+      * The entity x has id 5, with its neighbor y having id 7. The link is 5 -> 7.
 
-        * Both sides will do the same. So at the entity y, the link is 5 -> 7.
+      * Both sides will do the same. So at the entity y, the link is 5 -> 7.
 
 ## Property 
 
-    * Directed acyclic graph 
+  * Directed acyclic graph 
 
-        * 3 types of Nodes
+      * 3 types of Nodes
 
-            * Source (local minimum)
+          * Source (local minimum)
 
-            * Sink (local maximum)
+          * Sink (local maximum)
 
-            * Internal Node
+          * Internal Node
 
 ## Consequence
 
