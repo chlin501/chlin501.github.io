@@ -22,4 +22,8 @@ This place purely serves some personal note taking information.
 
     * [Multiple Email Addresses](multiple-email-addresses.md)
 
+5. Distributed Computing
+
+    * [Yo-yo](yo-yo.md) algorithm.
+
 6. [Bookmarks](bookmarks.md)
