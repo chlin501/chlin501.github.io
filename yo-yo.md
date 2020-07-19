@@ -51,14 +51,20 @@ Each iteraton is an electoral stage where some candidates are removed from consi
           a. Source sends its value down (toward) to all its neighbors (Source node -> Internal node(s))
 
           b. An internal node 
-              i. waits unitl receving fro all its neighbors
-              ii. computes the min of all received values
-              iii. sends the min value down to all its neighbors
+
+              * waits unitl receving fro all its neighbors
+
+              * computes the min of all received values
+
+              * sends the min value down to all its neighbors
 
           c. A sink 
-              i. waits until receiving a value from all its neighbors
-              ii. computes the min of all received values
-              ii. starts the second part (-Yo) of iteration 
+
+              * waits until receiving a value from all its neighbors
+
+              * computes the min of all received values
+
+              * starts the second part (-Yo) of iteration 
 
 
   2. -Yo 
