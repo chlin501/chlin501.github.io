@@ -8,3 +8,4 @@
       runtime.unsafeRune(result) // result = 3
       ```
 
+  * `type State[S, E, A] = ZIO[Has[Ref[S]], E, A]`
