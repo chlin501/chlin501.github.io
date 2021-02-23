@@ -80,6 +80,34 @@
 
   6. Reset 
 
+# φ-Failure Detector
+
+## Principle
+
+  * φ*p* 
+
+      * φ p = 0, no confidence at p (that p has crashed).
+
+      * φ p = ∞, lute confidence that p has crashed.
+
+  * Formula
+
+      ```
+      φ p = −log 10 (1 − P acc )
+      ```
+
+## Implementation
+
+  * History *H*: Arrival intervals of heartbeat messages per a monitored process.
+
+  * Window *W*: A set of histories of the processes.
+
+  * Aₖ: The arrival time for the *k*-th heartbeat message.
+
+  * H*q*:
+
 # Reference
 
   [1] [The φ Accrual Failure Detector](https://pdfs.semanticscholar.org/11ae/4c0c0d0c36dc177c1fff5eb84fa49aa3e1a8.pdf)
+
+  [2].[Two-ways Adaptive Failure Detection with the φ-Failure Detector](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.4.3455)
