@@ -18,6 +18,8 @@ This place purely serves some personal note taking information.
 
     * [Miscellaneous](zio-miscellaneous.md)
 
+    * [Examples](zio-examples.md)
+
 4. Git
 
     * [Multiple Email Addresses](multiple-email-addresses.md)
