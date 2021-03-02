@@ -2,13 +2,13 @@
 
 This place purely serves some personal note taking information.
 
-1. Scala
+1. Scala/ Functional Programming 
 
     * [Context Bounds](context-bounds.md)
 
-2. Functional Programming 
-
     * [Type Class](type-class.md)
+
+    * [Contravariance](contravariance.md)
 
 3. ZIO 
 
@@ -24,12 +24,8 @@ This place purely serves some personal note taking information.
 
     * [Kleisli](cats-kleisli.md)
 
-4. Git
+5. Git
 
     * [Multiple Email Addresses](multiple-email-addresses.md)
-
-5. Distributed Computing
-
-    * [Yo-yo](yo-yo.md) algorithm.
 
 6. [Bookmarks](bookmarks.md)
