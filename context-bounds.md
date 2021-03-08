@@ -1,6 +1,8 @@
-# Code
+# Definition
 
 A context bound describes an implicit value. It is used to declare that for some type A, there is an implicit value of type B[A] available. See [1][2].
+
+# Code
 
 As the Logging example below, for the type Slf4jLogger, there is an implicit value of type Logging[Slf4j] available.
 
