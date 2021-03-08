@@ -1,6 +1,6 @@
 ## Note Taking
 
-This place purely serves some personal note taking information.
+This place merely serves some personal note taking information.
 
 1. Scala/ Functional Programming 
 

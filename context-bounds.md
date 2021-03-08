@@ -1,5 +1,9 @@
 # Code
 
+A context bound describes an implicit value. It is used to declare that for some type A, there is an implicit value of type B[A] available. See [1][2].
+
+As the Logging example below, for the type Slf4jLogger, there is an implicit value of type Logging[Slf4j] available.
+
 * Without Context Bounds 
 
     ```scala
@@ -10,7 +14,7 @@
 
         def apply[T](implicit instance: Logging[T]) = instance
 
-        implicit val slf4j = new Logging[Slf4Logger] {
+        implicit val slf4j = new Logging[Slf4jLogger] {
             ...
         }
     }
@@ -22,7 +26,7 @@
     }
     ```
 
-* With Context Bounds[2]
+* With Context Bounds[3]
 
     ```scala
     trait Logging[T] {
@@ -48,4 +52,6 @@
 
 [1]. [What are Scala context bounds?](https://docs.scala-lang.org/tutorials/FAQ/context-bounds.html)
 
-[2]. [With Context Bounds](https://github.com/chlin501/logging/blob/master/logging/src/main/scala/logging/Logging.scala#L21)
+[2]. [Scala 2.8 Arrays](https://www.scala-lang.org/old/sites/default/files/sids/cunei/Thu, 2009-10-01, 13:54/arrays.pdf)
+
+[3]. [With Context Bounds](https://github.com/chlin501/logging/blob/master/logging/src/main/scala/logging/Logging.scala#L21)
