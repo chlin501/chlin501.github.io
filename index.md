@@ -18,6 +18,8 @@ This place merely serves some personal note taking information.
 
     * [Miscellaneous](zio-miscellaneous.md)
 
+    * [Actor](zio-actors.md)
+
     * [Examples](zio-examples.md)
 
 4. Cats
