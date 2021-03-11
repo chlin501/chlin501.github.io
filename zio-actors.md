@@ -20,7 +20,7 @@
            for {
              state <- Ref.make(initial)
              ...
-             ... <- ... process(message, state) ... // This defines how to process the queue See [2]
+             ... <- ... process(message, state) ... // This defines how to process the queue. And run within a task forever by pulling data from queue. See [2]
            } yield new Actor(...)
         }
       }
