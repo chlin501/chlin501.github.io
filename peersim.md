@@ -1,6 +1,6 @@
 # PeerSim
 
-## Steps
+## Steps (Build Artifact)
 
   1. `curl -L -o jep-djep-2.3.1.zip https://sourceforge.net/projects/jep/files/jep-djep-2.3.1.zip/download`
 
@@ -24,6 +24,25 @@
 
   9. `make release`
 
+## Tutorial
+
+### Cycle Based
+
+  1. Read Config
+
+  2. Simulator
+
+      2.1 setups the network
+
+      2.2 initializes the nodes in the network
+
+          * An instance per node
+
+          * The instances of nodes and the protocols are created by cloning
+
+
+  3. *Control* setup the initial states of *Protocol*
+
 # Dependencies 
 
   * JEP 2.3.0[4] (this is the version used by PeerSim source code in trunk)
@@ -38,3 +57,4 @@
 
   [4]. [JEP and DJEP binary](https://sourceforge.net/projects/jep/files/jep-djep-2.3.1.zip/download)
 
+  [5]. [PeerSim HOWTO: Build a new protocol for the PeerSim 1.0 simulator](http://peersim.sourceforge.net/tutorial1/tutorial1.html)

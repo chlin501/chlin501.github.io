@@ -44,6 +44,19 @@
 
 # Build a package from source
 
+  * TBD
+
+# Useful commands
+
+  * Search package(s)[5]
+
+      * `nix-env -qaP <name of the package to be searched>`
+
+          ```
+          #<Attribute name>.<package name>\t<version>
+          nixpkgs.git      git-2.31.1          
+          ```
+
 # References
 
   [1]. [Quick Install](https://nixos.org/download.html)
@@ -53,3 +66,5 @@
   [3]. [Isolating Development Environments Using Nix](https://dzone.com/articles/isolated-development-environment-using-nix)
 
   [4]. [Chapter 6. The Standard Environment](https://nixos.org/manual/nixpkgs/stable/#chap-stdenv)
+
+  [5]. [Searching package attribute names](https://nix.dev/tutorials/ad-hoc-developer-environments#searching-package-attribute-names)
