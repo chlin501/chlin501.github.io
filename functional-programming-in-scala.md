@@ -21,7 +21,11 @@
 
 ### Functors
 
-  * trait
+A design pattern that allows for a generic type to apply a function inside without changing the structure of the generic type[2]. 
+
+A type class that abstracts over type constructors that can be map‘ed over[3]. 
+
+* `map` fucntion
 
     ```scala
     trait Functor[F[_]] {
@@ -29,8 +33,16 @@
     } 
     ```
 
-  * map over a structure x with the identify function should itself be an identify
+* Laws
+
+    * Composition: `fa.map(f).map(g) = fa.map(f.andThen(g))`
+
+    * Identity: `fa.map(x => x) = fa`
 
 # References
 
   [1]. [Functional Programming in Scala](https://www.manning.com/books/functional-programming-in-scala)
+
+  [2]. [Functor (functional programming)](https://en.wikipedia.org/wiki/Functor_(functional_programming))
+
+  [3]. [Functor](https://typelevel.org/cats/typeclasses/functor.html)
