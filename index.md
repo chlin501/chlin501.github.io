@@ -10,6 +10,8 @@ This place merely serves some personal note taking information.
 
     * [Contravariance](contravariance.md)
 
+    * [Given and Using](given_and_using.md)
+
 3. ZIO 
 
     * [Task Status](zio-task-status.md)
