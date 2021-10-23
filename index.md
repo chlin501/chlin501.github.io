@@ -28,8 +28,4 @@ This place merely serves some personal note taking information.
 
     * [Kleisli](cats-kleisli.md)
 
-5. Git
-
-    * [Multiple Email Addresses](multiple-email-addresses.md)
-
 6. [Bookmarks](bookmarks.md)
