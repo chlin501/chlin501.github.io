@@ -24,6 +24,13 @@
 
   9. `make release`
 
+
+## Examples
+
+  * Within `$peersim_dir`
+
+      1. Execute `java -cp ./:jep-2.3.0.jar:djep-1.0.0.jar peersim.Simulator example/config-edexample.txt`
+
 ## Tutorial
 
 ### Cycle Based
