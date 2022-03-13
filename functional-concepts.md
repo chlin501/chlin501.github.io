@@ -82,8 +82,22 @@ An intermediate structure[6] between functors and monads. It allows sequenced fu
 
   * `liftA2` or `<*>`: apply a function wrapped in a context to a value wrapped in a context[7]
 
+      ```scala
+      def <*>(list: List[Int])(fn: => List[Int => Double]) = for {
+        e <- list
+        f <- fn
+      } yield f(e)
+      ```
+
 ### Laws
 
+  * Identity
+
+  * Composition 
+
+  * Homomorphism 
+
+  * Interchange 
 
 # References
 
