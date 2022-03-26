@@ -27,10 +27,15 @@
                 data <- queue.take 
               } yield data
               ```
+      * Note
+
+          * UIO[Queue[T]] is equivalent to makeQueue, which creates a new queue each time when doing `for { q <- queue /* queue = UIO[Queue[T]] */ ... }`
 
   * [Resource](https://github.com/chlin501/zio-examples/blob/master/src/main/scala/examples/resource/App.scala)
 
   * [Stream](https://github.com/chlin501/zio-examples/blob/master/src/main/scala/examples/stream/App.scala)
+
+      * [Stream with queue](https://github.com/chlin501/zio-stream-example/blob/main/src/main/scala/examples/App.scala)
 
   * [Task Status](https://github.com/chlin501/zio-examples/blob/master/src/main/scala/examples/task/App.scala)
 
