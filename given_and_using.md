@@ -10,39 +10,39 @@ Givens are a way to ensure that the compiler helps us to fill in the needed cont
 
 ### Single Canonical Value
 
-    * In **object Logging**,
+* In **object Logging**,
    
-        * define
-
-            ```scala
-            // See [3]
-            given consoLogger: Logging[String] = new Logging[String] {
-
-                def info(f: => String): String = { println(f); f }
-  
-                def debug(f: => String): String = { println(f); f }
-
-                def warn(f: => String): String = { println(f); f }
-
-                def error(f: => String): String = { println(f); f }
-
-            }
-            ```
-
-        * provide
-
-            ```scala
-            def apply[T: Logging]: Logging[T] = summon[Logging[T]]
-            // or
-            def apply[T: A](using ev: A[T]): ev.type = ev
-            ```
-
-    * In the **main** method,
+    * define
 
         ```scala
-        val log = Logging[String]
-        log.info("Hello World!")
+        // See [3]
+        given consoLogger: Logging[String] = new Logging[String] {
+
+            def info(f: => String): String = { println(f); f }
+  
+            def debug(f: => String): String = { println(f); f }
+
+            def warn(f: => String): String = { println(f); f }
+
+            def error(f: => String): String = { println(f); f }
+
+        }
         ```
+
+    * provide
+
+        ```scala
+        def apply[T: Logging]: Logging[T] = summon[Logging[T]]
+        // or
+        def apply[T: A](using ev: A[T]): ev.type = ev
+        ```
+
+* In the **main** method,
+
+    ```scala
+    val log = Logging[String]
+    log.info("Hello World!")
+    ```
 
 ### Multiple Instances
 
